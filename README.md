@@ -30,6 +30,7 @@ All test are made on Ubuntu 18.04.
     git submodule update 
 
 *From QtCreator*
+
 File -> Create file or Project -> Clone from git 
 Reository https://github.com/WicRus/emdr1986x-std-per-lib-qbs.git
 
