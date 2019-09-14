@@ -19,7 +19,7 @@ CppApplication {
     cpp.positionIndependentCode: false
     cpp.executableSuffix: ".elf"
 
-    property string  cpu_name : "E1"
+    property string  cpu_name : "C1"
 
     property var cpu_conf: ({   E1: "MDR1986VE1T",
                                 E3: "MDR1986VE3",
@@ -46,15 +46,16 @@ CppApplication {
     property string core: core_conf[cpu_name]
     property string periph: periph_conf[cpu_name]
 
-    property string home_path: path + "/"
-    property string cmsis_path: home_path + "/CMSIS/" + core
+    property string home_path: path
+    property string submodule_path: path + "/emdr1986x-std-per-lib"
+    property string cmsis_path: submodule_path + "/CMSIS/" + core
     property string inc_coresupport_path: cmsis_path + "/CoreSupport"
     property string inc_devicesupport_startup_path: cmsis_path + "/DeviceSupport/" + cpu + "/startup"
     property string inc_devicesupport_path: cmsis_path + "/DeviceSupport/" + cpu + "/inc"
-    property string periphery_path: home_path + "/" + periph
+    property string periphery_path: submodule_path + "/" + periph
     property string inc_periphery_path: periphery_path + "/inc"
     property string inc_periphery_usb_path: periphery_path + "/inc/USB_Library"
-    property string inc_config_path: home_path + "/Config"
+    property string inc_config_path: submodule_path + "/Config"
 
     property string app_path: home_path + "/app"
 

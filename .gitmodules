@@ -1,0 +1,3 @@
+[submodule "emdr1986x-std-per-lib"]
+	path = emdr1986x-std-per-lib
+	url = https://github.com/WicRus/emdr1986x-std-per-lib.git
