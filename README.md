@@ -1,4 +1,5 @@
 
+
 # emdr1986x-std-per-lib-qbs
 QtCreator template for Milandr microcpu
 
@@ -15,5 +16,28 @@ This is **unofficial** template for **unofficial** fork of **unofficial** librar
 All test are made on Ubuntu 18.04.
 
 [**Unofficial** fork of **unofficial** library](https://github.com/WicRus/emdr1986x-std-per-lib)
+
 [**Unofficial** library](https://github.com/eldarkg/emdr1986x-std-per-lib)
+
 [The GNU Embedded Toolchain for Arm](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
+
+**How to's**
+
+*From command line*
+
+    git clone https://github.com/WicRus/emdr1986x-std-per-lib-qbs.git
+    cd emdr1986x-std-per-lib-qbs
+    git submodule update 
+
+*From QtCreator*
+File -> Create file or Project -> Clone from git 
+Reository https://github.com/WicRus/emdr1986x-std-per-lib-qbs.git
+
+Open project directory and run
+
+    git submodule update 
+
+
+**Issuse** 
+
+Openocd target config have only for MDR1986VE1T and MDR1986VE9x. Others config are use placeholders.
