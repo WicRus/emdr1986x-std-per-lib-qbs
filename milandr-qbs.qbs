@@ -4,22 +4,7 @@ import qbs.ModUtils
 
 CppApplication {
 
-    name: "milandr-firmware"
-    type: [
-        "application",
-        "bin",
-        "hex",
-    ]
-
-    Depends {
-        name: "cpp"
-    }
-
-    consoleApplication: true
-    cpp.positionIndependentCode: false
-    cpp.executableSuffix: ".elf"
-
-    property string  cpu_name : "C1"
+    property string  cpu_name : "E1"
 
     property var cpu_conf: ({   E1: "MDR1986VE1T",
                                 E3: "MDR1986VE3",
@@ -58,6 +43,21 @@ CppApplication {
     property string inc_config_path: submodule_path + "/Config"
 
     property string app_path: home_path + "/app"
+
+    name: cpu
+    type: [
+        "application",
+        "bin",
+        "hex",
+    ]
+
+    Depends {
+        name: "cpp"
+    }
+
+    consoleApplication: true
+    cpp.positionIndependentCode: false
+    cpp.executableSuffix: ".elf"
 
     Group {
         name: "app"
@@ -185,7 +185,7 @@ CppApplication {
                         input.filePath) + " -> " + input.baseName + ".bin"
 
             var argsFlashingInternalFlash =
-            [           "-f", project.sourceDirectory + "/openocd/" + cpu_conf[cpu_name] + ".cfg",
+            [           "-f", project.sourceDirectory + "/openocd/" + input.baseName + ".cfg",
                         "-c", "init",
                         "-c", "reset init",
                         "-c", "flash write_image erase " + input.filePath,
@@ -218,7 +218,7 @@ CppApplication {
                         input.filePath) + " -> " + input.baseName + ".bin"
 
             var argsFlashingInternalFlash =
-            [           "-f", project.sourceDirectory + "/openocd/" + cpu_conf[cpu_name] + ".cfg",
+             [           "-f", project.sourceDirectory + "/openocd/" + input.baseName + ".cfg",
                         "-c", "init",
                         "-c", "reset init",
                         "-c", "flash write_image erase " + input.filePath,
