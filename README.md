@@ -21,6 +21,8 @@ All test are made on Ubuntu 18.04.
 
 [The GNU Embedded Toolchain for Arm](https://developer.arm.com/tools-and-software/open-source-software/developer-tools/gnu-toolchain/gnu-rm/downloads)
 
+[Openocd for write and debug firmware](http://openocd.org)
+
 **How to's**
 
 *From command line*
