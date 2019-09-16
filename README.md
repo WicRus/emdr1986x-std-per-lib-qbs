@@ -27,9 +27,7 @@ All test are made on Ubuntu 18.04.
 
 *From command line*
 
-    git clone https://github.com/WicRus/emdr1986x-std-per-lib-qbs.git
-    cd emdr1986x-std-per-lib-qbs
-    git submodule update --init
+    git clone https://github.com/WicRus/emdr1986x-std-per-lib-qbs.git --recursive
 
 *From QtCreator*
 
