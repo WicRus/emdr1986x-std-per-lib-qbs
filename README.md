@@ -29,16 +29,14 @@ All test are made on Ubuntu 18.04.
 
     git clone https://github.com/WicRus/emdr1986x-std-per-lib-qbs.git
     cd emdr1986x-std-per-lib-qbs
-    git submodule update 
+    git submodule update --init
 
 *From QtCreator*
 
 File -> Create file or Project -> Clone from git 
 Reository https://github.com/WicRus/emdr1986x-std-per-lib-qbs.git
+**☑** Recursive
 
-Open project directory and run
-
-    git submodule update 
 
 
 **Issuse** 
