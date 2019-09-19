@@ -23,6 +23,8 @@ All test are made on Ubuntu 18.04.
 
 [Openocd for write and debug firmware](http://openocd.org)
 
+[QtCreator settings: habr ruissian guide](https://habr.com/ru/post/467455/)
+
 **How to's**
 
 *From command line*
