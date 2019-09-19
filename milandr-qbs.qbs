@@ -73,6 +73,7 @@ CppApplication {
             periphery_path + "/**/*.h",
             periphery_path + "/**/*.c",
             inc_devicesupport_startup_path + "/gcc/*.S",
+            inc_devicesupport_startup_path + "/**/*.c",
         ]
         excludeFiles: [
 
